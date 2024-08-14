@@ -13,22 +13,19 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import AnimatedArrow from './AnimatedArrow.vue'
+import { ButtonType, buttonTypes } from './Button';
 
-enum ButtonType {
-  primary = 'primary',
-  secondary = 'secondary',
-  arrow = 'arrow'
-}
 
-const props = defineProps({
+const props = defineProps(
+ {
   type: {
     type: String,
-    default: ButtonType.primary,
+    default: 'primary',
     validator(value: any) {
-      return Object.values(ButtonType).includes(value)
+      return buttonTypes.includes(value)
     }
   }
-})
+} )
 const hover = ref(false)
 
 function toggleHover() {
@@ -42,6 +39,8 @@ const classType = computed(() => {
     return 'secondary'
   } else if (props.type === ButtonType.arrow) {
     return 'secondary'
+  } else {
+    return 'primary'
   }
 })
 </script>

@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "declaration": true,            // Emit .d.ts files for type declarations
-    "declarationMap": true,         // Emit source maps for .d.ts files
-    "emitDeclarationOnly": true,    // Only emit .d.ts files
-    "outDir": "dist",               // Output directory for built files
+    "declaration": true, // Emit .d.ts files for type declarations
+    "declarationMap": true, // Emit source maps for .d.ts files
+    "emitDeclarationOnly": true, // Only emit .d.ts files
+    "outDir": "dist", // Output directory for built files
     "allowJs": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -13,13 +13,12 @@
     "jsx": "preserve",
     "skipLibCheck": true
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.vue"
-  ],
-  "exclude": ["node_modules", "dist",
-   "src/**/*.mdx", "src/**/*.stories.@(js|jsx|mjs|ts|tsx)'",
-   "**/__tests__"
- 
-]
+  "include": ["src/**/*.ts", "src/**/*.vue"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.mdx",
+    "src/**/*.stories.@(js|jsx|mjs|ts|tsx)'",
+    "**/__tests__"
+  ]
 }

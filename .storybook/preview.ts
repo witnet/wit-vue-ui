@@ -12,23 +12,22 @@ const preview: Preview = {
     },
     backgrounds: {
       default: '',
-      values: [ 
+      values: [
         {
-         name: 'white',
-         value: '#fff'
+          name: 'white',
+          value: '#fff'
         },
         {
           name: 'grey',
-          value: '#707070',
+          value: '#707070'
         },
         {
           name: 'blue',
-          value: '#00e2ed',
-        },
-      ],
-    },
+          value: '#00e2ed'
+        }
+      ]
+    }
   }
-  
 }
 
 export default preview

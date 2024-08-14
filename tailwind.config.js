@@ -1,37 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'class',
   extend: {
     rotate: {
-      75: '75deg',
-    },
+      75: '75deg'
+    }
   },
   content: [
-    // './components/**/*.{js,vue,ts}',
-    // './layouts/**/*.vue',
-    // './pages/**/*.vue',
-    // './plugins/**/*.{js,ts}',
-    // './app.vue',
-    // './error.vue',
+    './src/components/**/*.{js,vue,ts}',
   ],
-  safelist: [
-    'btn-primary',
-    'btn-dark',
-    'btn-secondary',
-    'btn-disabled',
-  ],
+  safelist: ['btn-primary', 'btn-dark', 'btn-secondary', 'btn-disabled'],
   theme: {
     screens: {
       lg: { max: '1600px' },
       md: { max: '1200px' },
       sm: { max: '706px' },
-      xs: { max: '350px' },
+      xs: { max: '350px' }
     },
     extend: {
       fontFamily: {
-        title: ['Outfit', 'sans-serif'],
-      },
+        title: ['Outfit', 'sans-serif']
+      }
       // fontSize: {
       //   "9xl": "6.875rem",
       //   "8xl": "5.625rem",
@@ -51,7 +40,7 @@ export default {
         700: '#525252',
         800: '#464646',
         900: '#3d3d3d',
-        950: '#292929',
+        950: '#292929'
       },
       gray: {
         50: '#f6f6f6',
@@ -64,7 +53,7 @@ export default {
         700: '#4f4f4f',
         800: '#454545',
         900: '#3d3d3d',
-        950: '#262626',
+        950: '#262626'
       },
       black: {
         50: '#f6f6f6',
@@ -77,7 +66,7 @@ export default {
         700: '#4f4f4f',
         800: '#454545',
         900: '#3d3d3d',
-        950: '#232323',
+        950: '#232323'
       },
       'wit-blue': {
         50: '#ebfffe',
@@ -90,18 +79,18 @@ export default {
         700: '#0a8494',
         800: '#126978',
         900: '#145765',
-        950: '#063a46',
-      },
+        950: '#063a46'
+      }
     },
     fontFamily: {
-      sans: ['Poppins', 'sans-serif'],
+      sans: ['Poppins', 'sans-serif']
     },
     borderRadius: {
       none: '0',
       sm: '.125rem',
       DEFAULT: '.25rem',
       lg: '.5rem',
-      full: '9999px',
+      full: '9999px'
     },
     spacing: {
       xs: '4px',
@@ -121,7 +110,7 @@ export default {
       'md-y-screen': '50vh',
       '2-md-y-screen': '70vh',
       'lg-y-screen': '90vh',
-      'xl-y-screen': '100vh',
+      'xl-y-screen': '100vh'
     },
     opacity: {
       0: '0',
@@ -129,8 +118,8 @@ export default {
       40: '0.4',
       60: '0.6',
       80: '0.8',
-      100: '1',
-    },
+      100: '1'
+    }
   },
-  plugins: [],
+  plugins: []
 }
