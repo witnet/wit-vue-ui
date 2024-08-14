@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import Btn from './Btn.vue'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
-const meta = {
+const meta: any = {
   title: 'Example/Btn',
   component: Btn,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
@@ -27,7 +27,7 @@ type Story = StoryObj<typeof meta>
  */
 
 export const Primary: Story = {
-  render: (args) => ({
+  render: (args: any) => ({
     components: { Btn },
     setup() {
       return { args }
@@ -43,7 +43,7 @@ export const Secondary: Story = {
   parameters: {
     backgrounds: { default: 'grey' }
   },
-  render: (args) => ({
+  render: (args: any) => ({
     components: { Btn },
     setup() {
       return { args }
@@ -56,7 +56,7 @@ export const Secondary: Story = {
 }
 
 export const Arrow: Story = {
-  render: (args) => ({
+  render: (args: any) => ({
     components: { Btn },
     setup() {
       return { args }
