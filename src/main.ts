@@ -4,4 +4,8 @@ import './assets/colors.scss'
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import vWitnet from './index'
+
+createApp(App)
+.use(vWitnet)
+.mount('#app')

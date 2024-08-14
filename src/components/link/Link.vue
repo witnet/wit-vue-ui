@@ -22,7 +22,6 @@ const props = defineProps({
     type: String,
     required: true
   }
-  // TODO: Add size
 })
 
 const classes = computed(() => {
