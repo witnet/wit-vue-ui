@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WIconRounded > renders properly 1`] = `
+<div
+  class="border border-black-950 w-min rounded-full p-md bg-wit-blue-500 hover:bg-wit-blue-300 transition-colors"
+>
+  
+  <wiconrounded>
+    <svg
+      id="email"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        data-name="Layer 2"
+      >
+        <path
+          d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm0 2-6.5 4.47a1 1 0 0 1-1 0L5 6z"
+          data-name="email"
+          fill="#ccc"
+        />
+      </g>
+    </svg>
+  </wiconrounded>
+  
+</div>
+`;
