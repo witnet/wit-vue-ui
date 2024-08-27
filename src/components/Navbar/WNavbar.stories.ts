@@ -45,22 +45,22 @@ export const Navbar: Story = {
         active: false,
         to: '/stake',
         rel: 'stake',
-        locale: 'stake',
+        locale: 'stake'
       },
       {
         key: 'buy',
         active: false,
         to: '/buy',
         rel: 'buy',
-        locale: 'buy',
+        locale: 'buy'
       },
       {
         key: 'build',
         active: false,
         to: '/build',
         rel: 'build',
-        locale: 'build',
-      },
+        locale: 'build'
+      }
     ],
     redirectionActive: false
   }

@@ -9,12 +9,7 @@
         <div class="close-menu-container" @click="closeMenu">
           <CloseNavIcon />
         </div>
-        <li
-          v-for="link in navLinks"
-          :key="link.key"
-          class="nav-link"
-          @click="closeMenu"
-        >
+        <li v-for="link in navLinks" :key="link.key" class="nav-link" @click="closeMenu">
           <a
             :href="`#${link.key}`"
             class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
@@ -27,8 +22,7 @@
                 class="w-sm h-auto absolute top-[16px] left-[4px]"
               />
             </Transition>
-            <span /><span class="slash text-wit-blue-500">/</span
-            >{{ link.locale }}
+            <span /><span class="slash text-wit-blue-500">/</span>{{ link.locale }}
           </a>
         </li>
         <!-- <li class="nav-link language-select">
@@ -47,20 +41,20 @@
 <script lang="ts" setup>
 import { ref, PropType, watch, computed } from 'vue'
 import { NavLink, NavLinks } from './WNavbar.ts'
-import NavigationCursor from '@/assets/navigation-cursor.svg?component'
-import HamburgerIcon from '@/assets/hamburguer.svg?component'
-import CloseNavIcon from '@/assets/close-nav.svg?component'
+import NavigationCursor from '@/assets/svg/navigation-cursor.svg?component'
+import HamburgerIcon from '@/assets/svg/hamburguer.svg?component'
+import CloseNavIcon from '@/assets/svg/close-nav.svg?component'
 const menu = ref()
 const checkbox = ref()
 
 const props = defineProps({
   navLinks: {
     type: Object as PropType<NavLinks>,
-    required: true,
+    required: true
   },
   redirectionActive: {
     type: Boolean,
-    required: true,
+    required: true
   }
 })
 
@@ -79,14 +73,11 @@ function clearActiveLinks() {
   localNabLinks.value.forEach((link: NavLink) => (link.active = false))
 }
 
-watch(
-  redirectionActive,
-  () => {
-    if ((checkbox.value as HTMLInputElement).checked) {
-      closeMenu()
-    }
-  },
-)
+watch(redirectionActive, () => {
+  if ((checkbox.value as HTMLInputElement).checked) {
+    closeMenu()
+  }
+})
 </script>
 
 <style lang="scss">
