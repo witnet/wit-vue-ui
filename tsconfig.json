@@ -11,9 +11,10 @@
     "module": "ESNext",
     "strict": true,
     "jsx": "preserve",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
   },
-  "include": ["src/**/*.ts", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.vue", "./index.d.ts"],
   "exclude": [
     "node_modules",
     "dist",
