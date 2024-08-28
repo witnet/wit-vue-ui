@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WSection > renders properly 1`] = `
+<div
+  class="w-full h-full bg-black-950"
+>
+  <div
+    class="content p-[100px] m-[0_auto] max-w-[1100px] w-full sm:p-[70px_32px] xs:p-[70px_16px] z-50 grid justify-items-center"
+  >
+    
+    <p>
+      Section content
+    </p>
+    
+  </div>
+</div>
+`;
