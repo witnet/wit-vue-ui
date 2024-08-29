@@ -8,7 +8,7 @@ describe('WSection', () => {
     const wrapper = mount(WSection, {
       props: {
         frameClasses: 'bg-black-950',
-        contentClasses: 'grid justify-items-center',
+        contentClasses: 'grid justify-items-center'
       },
       slots: {
         content: h('p', 'Section content')

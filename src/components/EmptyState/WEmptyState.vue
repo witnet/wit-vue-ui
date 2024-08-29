@@ -10,7 +10,7 @@ import EmptyStateLogo from '@/assets/svg/empty-state.svg?component'
 defineProps({
   text: {
     type: String,
-    required: true,
-  },
+    required: true
+  }
 })
 </script>

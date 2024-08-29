@@ -21,5 +21,5 @@ export const Section: Story = {
       return { args }
     },
     template: `<WSpinner />`
-  }),
+  })
 }

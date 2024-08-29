@@ -40,6 +40,6 @@ export const Section: Story = {
   }),
   args: {
     frameClasses: 'bg-black-950',
-    contentClasses: 'grid justify-items-center',
+    contentClasses: 'grid justify-items-center'
   }
 }

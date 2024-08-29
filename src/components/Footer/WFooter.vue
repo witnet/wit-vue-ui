@@ -44,25 +44,23 @@
           <WitOracleIcon class="w-[140px] h-auto white" name="witnet_dark" />
           <div class="h-max self-center">
             <p class="copyright max-w-100 footer-text">
-              © <span>2018-{{ new Date().getFullYear() }}</span
-              >
-            <slot name="custom-contributors">
-              <span>
-                by <a :href=WITNET_FOUNDATION_URL target="_blank">
-                  Witnet Foundation
-                </a> and individual contributors.
-              </span>
-            </slot>
+              © <span>2018-{{ new Date().getFullYear() }}</span>
+              <slot name="custom-contributors">
+                <span>
+                  by <a :href="WITNET_FOUNDATION_URL" target="_blank"> Witnet Foundation </a> and
+                  individual contributors.
+                </span>
+              </slot>
             </p>
-            <p class="copyright max-w-100 footer-text"><slot name="custom-license">
-              <span>
-                Content available under a 
-                <a :href=CREATIVE_COMMONS_URL target="_blank">
-                  Creative Commons License
-                </a>
-                .
-              </span>
-            </slot></p>
+            <p class="copyright max-w-100 footer-text">
+              <slot name="custom-license">
+                <span>
+                  Content available under a
+                  <a :href="CREATIVE_COMMONS_URL" target="_blank"> Creative Commons License </a>
+                  .
+                </span>
+              </slot>
+            </p>
           </div>
           <!-- <client-only>
             <LanguageSwitcher class="justify-self-end self-center" />
@@ -92,6 +90,6 @@ defineProps({
   adoDescription: {
     type: String,
     default: `Witnet is part of the Alliance of Decentralized Oracles (ADO), a joint effort by leading decentralized oracle solutions to make the life of smart contract developers easier by creating oracle standards. Learn more about the ADO at`
-  },
+  }
 })
 </script>

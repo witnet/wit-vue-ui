@@ -37,6 +37,6 @@ export const Section: Story = {
   args: {
     height: '100px',
     width: '150px',
-    borderRadius: '8%',
+    borderRadius: '8%'
   }
 }

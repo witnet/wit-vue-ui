@@ -6,8 +6,8 @@ describe('WEmptyState', () => {
   it('renders properly', () => {
     const wrapper = mount(WEmptyState, {
       props: {
-        text: 'Empty state',
-      },
+        text: 'Empty state'
+      }
     })
 
     expect(wrapper.element).toMatchSnapshot()

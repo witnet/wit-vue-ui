@@ -1,21 +1,25 @@
 <template>
-  <div class="placeholder bg-gray-50 bg-opacity-60 bg-gradient-to-r from-gray-50 shadow-sm shadow-gray-100 bg-[length:200%_200%]">&nbsp;</div>
+  <div
+    class="placeholder bg-gray-50 bg-opacity-60 bg-gradient-to-r from-gray-50 shadow-sm shadow-gray-100 bg-[length:200%_200%]"
+  >
+    &nbsp;
+  </div>
   <span class="sr-only">Loading...</span>
 </template>
 <script setup>
 defineProps({
   height: {
     type: String,
-    required: true,
+    required: true
   },
   width: {
     type: String,
-    required: true,
+    required: true
   },
   borderRadius: {
     type: String,
-    required: true,
-  },
+    required: true
+  }
 })
 </script>
 <style scoped lang="scss">
@@ -34,4 +38,3 @@ defineProps({
   animation: bgAnimate 1.2s linear infinite;
 }
 </style>
-

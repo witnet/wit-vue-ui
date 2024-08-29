@@ -35,6 +35,6 @@ export const Section: Story = {
     template: `<WEmptyState v-bind="args" />`
   }),
   args: {
-    text: 'Empty state text',
+    text: 'Empty state text'
   }
 }

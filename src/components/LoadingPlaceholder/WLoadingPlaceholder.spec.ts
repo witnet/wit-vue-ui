@@ -8,8 +8,8 @@ describe('WLoadingPlaceholder', () => {
       props: {
         height: '100px',
         width: '150px',
-        borderRadius: '8%',
-      },
+        borderRadius: '8%'
+      }
     })
 
     expect(wrapper.element).toMatchSnapshot()

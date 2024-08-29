@@ -7,5 +7,5 @@ export default {
   WButton,
   WFooter,
   WLink,
-  WNavbar,
+  WNavbar
 }
