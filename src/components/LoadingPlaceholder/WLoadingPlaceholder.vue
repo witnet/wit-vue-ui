@@ -1,5 +1,6 @@
 <template>
   <div class="placeholder bg-gray-50 bg-opacity-60 bg-gradient-to-r from-gray-50 shadow-sm shadow-gray-100 bg-[length:200%_200%]">&nbsp;</div>
+  <span class="sr-only">Loading...</span>
 </template>
 <script setup>
 defineProps({

@@ -6,7 +6,9 @@ describe('WLoadingPlaceholder', () => {
   it('renders properly', () => {
     const wrapper = mount(WLoadingPlaceholder, {
       props: {
-        text: 'Empty state',
+        height: '100px',
+        width: '150px',
+        borderRadius: '8%',
       },
     })
 

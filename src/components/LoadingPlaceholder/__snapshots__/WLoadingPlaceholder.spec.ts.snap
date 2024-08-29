@@ -2,10 +2,21 @@
 
 exports[`WLoadingPlaceholder > renders properly 1`] = `
 <div
-  class="placeholder bg-gray-50 bg-opacity-60 bg-gradient-to-r from-gray-50 shadow-sm shadow-gray-100 bg-[length:200%_200%]"
-  data-v-bd9b9d04=""
-  text="Empty state"
+  data-v-app=""
 >
-   
+  
+  <div
+    class="placeholder bg-gray-50 bg-opacity-60 bg-gradient-to-r from-gray-50 shadow-sm shadow-gray-100 bg-[length:200%_200%]"
+    data-v-bd9b9d04=""
+  >
+     
+  </div>
+  <span
+    class="sr-only"
+    data-v-bd9b9d04=""
+  >
+    Loading...
+  </span>
+  
 </div>
 `;
