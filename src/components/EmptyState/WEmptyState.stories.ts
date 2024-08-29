@@ -26,7 +26,7 @@ type Story = StoryObj<typeof meta>
  * to learn how to use render functions.
  */
 
-export const Section: Story = {
+export const Default: Story = {
   render: (args: any) => ({
     components: { WEmptyState },
     setup() {

@@ -12,7 +12,7 @@ const meta: any = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Section: Story = {
+export const Default: Story = {
   render: (args: any) => ({
     components: { WSection },
     setup() {

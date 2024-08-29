@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import EmptyStateLogo from '@/assets/svg/empty-state.svg?component'
 defineProps({
   text: {
