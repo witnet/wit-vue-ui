@@ -2,11 +2,12 @@
 
 exports[`WSpinner > renders properly 1`] = `
 <div
+  class="spinner"
   role="status"
 >
   <svg
     aria-hidden="true"
-    class="w-8 h-8 text-gray-100 animate-spin fill-wit-blue-500"
+    class="w-full h-full text-gray-100 animate-spin fill-wit-blue-500"
     fill="none"
     viewBox="0 0 100 101"
     xmlns="http://www.w3.org/2000/svg"

@@ -18,6 +18,9 @@ export const Default: Story = {
     setup() {
       return { args }
     },
-    template: `<WSpinner />`
+    template: `<WSpinner v-bind="args" />`,
+    args: {
+      size: '30px'
+    }
   })
 }
