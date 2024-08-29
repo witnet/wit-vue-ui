@@ -1,0 +1,154 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WNavbar > renders properly the component 1`] = `
+<header
+  class="navbar"
+>
+  <div
+    class="logo-link"
+  >
+    
+    
+  </div>
+  <input
+    class="checkbox"
+    id="side-menu"
+    type="checkbox"
+  />
+  <nav
+    class="navbar-tabs"
+  >
+    <ul
+      class="navbar-links animated zoomIn"
+    >
+      <div
+        class="close-menu-container"
+      >
+        <svg
+          fill="#fff"
+          height="32"
+          viewBox="0 0 32 32"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.333 12.333 16 16m0 0 3.666 3.666M16 16l-3.667 3.666M16 16l3.666-3.667M16 27C9.925 27 5 22.075 5 16S9.925 5 16 5s11 4.925 11 11-4.925 11-11 11"
+            stroke="#292D32"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      
+      <li
+        class="nav-link"
+      >
+        <a
+          class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
+          href="#stake"
+        >
+          <transition-stub
+            appear="false"
+            css="true"
+            name="fade"
+            persisted="false"
+          >
+            <!--v-if-->
+          </transition-stub>
+          <span />
+          <span
+            class="slash text-wit-blue-500"
+          >
+            /
+          </span>
+          Stake
+        </a>
+      </li>
+      <li
+        class="nav-link"
+      >
+        <a
+          class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
+          href="#buy"
+        >
+          <transition-stub
+            appear="false"
+            css="true"
+            name="fade"
+            persisted="false"
+          >
+            <!--v-if-->
+          </transition-stub>
+          <span />
+          <span
+            class="slash text-wit-blue-500"
+          >
+            /
+          </span>
+          Buy
+        </a>
+      </li>
+      <li
+        class="nav-link"
+      >
+        <a
+          class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
+          href="#build"
+        >
+          <transition-stub
+            appear="false"
+            css="true"
+            name="fade"
+            persisted="false"
+          >
+            <svg
+              class="w-sm h-auto absolute top-[16px] left-[4px]"
+              fill="none"
+              height="13"
+              viewBox="0 0 12 13"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.17 6.39 5.89 9.44.61 12.48V.29l5.28 3.05z"
+                fill="#00E2ED"
+              />
+            </svg>
+          </transition-stub>
+          <span />
+          <span
+            class="slash text-wit-blue-500"
+          >
+            /
+          </span>
+          Build
+        </a>
+      </li>
+      
+      <!-- &lt;li class="nav-link language-select"&gt;
+          &lt;client-only&gt;
+            &lt;LanguageSwitcher /&gt;
+          &lt;/client-only&gt;
+        &lt;/li&gt; -->
+    </ul>
+  </nav>
+  <label
+    class="hamburguer-container"
+    for="side-menu"
+  >
+    <svg
+      class="hamburguer"
+      fill="none"
+      height="37"
+      viewBox="0 0 57 37"
+      width="57"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M.821.4h56v8h-56zM.821 28.4h56v8h-56zM.821 14.4h56v8h-56z"
+        fill="#232323"
+      />
+    </svg>
+  </label>
+</header>
+`;
