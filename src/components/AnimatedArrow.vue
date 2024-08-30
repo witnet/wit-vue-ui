@@ -7,9 +7,8 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 import { computed, ref, watch } from 'vue'
-
 import WIcon from '../icon/WIcon.vue'
-import { IconName } from '../icon/WIcon'
+import { IconName } from './icon/WIcon'
 
 const arrow = ref(null)
 

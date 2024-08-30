@@ -1,0 +1,111 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WCard > base 1`] = `
+<div
+  class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
+  data-v-47e965dc=""
+>
+  <div
+    data-v-47e965dc=""
+  >
+    
+    
+  </div>
+  <!--v-if-->
+</div>
+`;
+
+exports[`WCard > icon 1`] = `
+<div
+  class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
+  data-v-47e965dc=""
+>
+  <!--v-if-->
+  <div
+    data-v-47e965dc=""
+  >
+    <div
+      class="border border-black-950 w-min rounded-full p-md bg-wit-blue-500 rounded-icon"
+      data-v-47e965dc=""
+    >
+      <div
+        class="icon-container flex justify-center items-center"
+      >
+        
+        
+        WIcon
+        
+        
+      </div>
+    </div>
+    <div
+      class="ml-xl px-sm"
+      data-v-47e965dc=""
+    >
+      <h3
+        class="text-2xl text-black-950 font-semibold leading-4 pl-14"
+        data-v-47e965dc=""
+      >
+        Custom title
+      </h3>
+      <hr
+        class="hr my-md ml-14"
+        data-v-47e965dc=""
+      />
+    </div>
+    <p
+      class="text text-black-950 mb-lg"
+      data-v-47e965dc=""
+    >
+      Custom description
+    </p>
+    <svg
+      class="slashes w-[68px] sm:hidden"
+      data-v-47e965dc=""
+      fill="none"
+      height="22"
+      viewBox="0 0 119 22"
+      width="119"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18.976.684.4 19.259l2.192 2.192L21.168 2.876zM35.164.686 16.588 19.26l2.192 2.192L37.357 2.878zM51.362.687 32.787 19.263l2.192 2.192L53.554 2.88zM67.557.682 48.981 19.258l2.192 2.192L69.75 2.874zM83.746.684 65.17 19.26l2.192 2.192L85.938 2.876zM99.934.686 81.358 19.262l2.192 2.192 18.576-18.576zM116.131.688 97.556 19.264l2.192 2.192L118.323 2.88z"
+        fill="#00E2ED"
+      />
+    </svg>
+    <a
+      aria-label="Link to"
+      data-v-47e965dc=""
+      href="#url"
+      target="_blank"
+    >
+      <button
+        class="btn w-fit flex items-center btn-secondary action"
+        data-v-47e965dc=""
+        data-v-870c3481=""
+      >
+        
+        Link to
+        
+        <div
+          data-v-870c3481=""
+        >
+          <svg
+            class="arrow ml-md h-[14px]"
+            fill="none"
+            height="25"
+            viewBox="0 0 15 25"
+            width="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.75 24.23c-.44 0-.88-.16-1.22-.49-.7-.68-.73-1.79-.05-2.5l8.66-9.04-8.66-9.04A1.769 1.769 0 0 1 4.03.71l9.83 10.26c.66.68.66 1.76 0 2.45L4.03 23.68c-.35.37-.82.55-1.28.55"
+              fill="#C6C6C6"
+            />
+          </svg>
+        </div>
+      </button>
+    </a>
+  </div>
+</div>
+`;

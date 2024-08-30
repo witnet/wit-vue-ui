@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import AnimatedArrow from './AnimatedArrow.vue'
+import AnimatedArrow from '../AnimatedArrow.vue'
 import { ButtonType, buttonTypes } from './WButton'
 
 const props = defineProps({
