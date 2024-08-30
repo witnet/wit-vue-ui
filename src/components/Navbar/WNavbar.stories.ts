@@ -46,6 +46,41 @@ export const Navbar: Story = {
         to: '/build',
         rel: 'build',
         locale: 'build'
+      },
+      {
+        key: 'build',
+        active: false,
+        to: '/build',
+        rel: 'build',
+        locale: 'build'
+      },
+      {
+        key: 'build',
+        active: false,
+        to: '/build',
+        rel: 'build',
+        locale: 'build'
+      },
+      {
+        key: 'build',
+        active: false,
+        to: '/build',
+        rel: 'build',
+        locale: 'build'
+      },
+      {
+        key: 'build',
+        active: false,
+        to: '/build',
+        rel: 'build',
+        locale: 'build'
+      },
+      {
+        key: 'build',
+        active: false,
+        to: '/build',
+        rel: 'build',
+        locale: 'build'
       }
     ],
     redirectionActive: false
