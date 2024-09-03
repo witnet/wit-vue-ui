@@ -1,6 +1,6 @@
 <template>
   <div ref="arrow">
-    <IconRightArrow class="arrow ml-md h-[14px]"></IconRightArrow>
+    <WIcon :name="IconName.RightArrow" class="arrow ml-md h-[14px]" :color="color"></WIcon>
   </div>
 </template>
 
@@ -8,15 +8,19 @@
 import { gsap } from 'gsap'
 import { computed, ref, watch } from 'vue'
 
-import IconRightArrow from '../icons/IconRightArrow.vue'
+import WIcon from '../icon/WIcon.vue'
+import { IconName } from '../icon/WIcon'
 
-// import ArrowRightIcon from '@/assets/svg/arrow_right.svg?component'
 const arrow = ref(null)
 
 const props = defineProps({
   hover: {
     type: Boolean,
     default: false
+  },
+  color: {
+    type: String,
+    default: '#fff'
   }
 })
 
