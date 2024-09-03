@@ -41,13 +41,5 @@ export default defineConfig({
         }
       }
     }
-  },
-  // css: {
-  //   postcss: './postcss.config.js',
-  //   preprocessorOptions: {
-  //     css: {
-  //       additionalData: '@import "@/assets/style.css";', // Globally load main.css
-  //     }
-  //   }
-  // }
+  }
 })
