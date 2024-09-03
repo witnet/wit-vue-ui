@@ -1,12 +1,12 @@
 import { describe, it, expect } from 'vitest'
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import WSelect from './WSelect.vue'
 import { DropdownPosition } from './WSelect'
 import Icon from '@/assets/svg/navigation-cursor.svg?component'
 
 describe('WSelect', () => {
   it('renders properly', () => {
-    const wrapper = mount(WSelect, {
+    const wrapper = shallowMount(WSelect, {
       emits: ['update:modelValue'],
       props: {
         dropdownPosition: DropdownPosition.bottom,
@@ -33,7 +33,7 @@ describe('WSelect', () => {
   })
 
   it('renders properly an icon when provided', () => {
-    const wrapper = mount(WSelect, {
+    const wrapper = shallowMount(WSelect, {
       emits: ['update:modelValue'],
       props: {
         dropdownPosition: DropdownPosition.bottom,

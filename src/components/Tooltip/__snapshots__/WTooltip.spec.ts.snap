@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WTooltip > renders properly 1`] = `
+<div
+  class="group inline relative p-[4px] -p-[4px]"
+  data-v-38c68585=""
+>
+  
+  <p>
+    Text
+  </p>
+  
+  <div
+    class="tooltip-container hidden min-w-max py-md px-md rounded-lg group-hover:inline hover:inline transition-opacity text-sm rounded-md absolute bottom-md -translate-x-[50%] mb-sm"
+    data-v-38c68585=""
+  >
+    
+    <p
+      class="text-white-50"
+    >
+      Text info
+    </p>
+    
+  </div>
+</div>
+`;
