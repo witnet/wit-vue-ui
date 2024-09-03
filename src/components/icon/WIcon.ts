@@ -21,7 +21,6 @@ export enum IconName {
   Simpleswap = 'simpleswap',
   Telegram = 'telegram',
   Windows = 'windows',
-  WitnetLogoDark = 'witnet-logo-dark',
   X = 'x'
 }
 

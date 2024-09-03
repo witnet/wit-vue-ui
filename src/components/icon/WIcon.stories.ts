@@ -31,7 +31,6 @@ const meta: any = {
         'simpleswap',
         'telegram',
         'windows',
-        'witnet-logo-dark',
         'x'
       ]
     }
@@ -64,7 +63,8 @@ export const Apple: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'apple'
+    name: 'apple',
+    color: 'black'
   }
 }
 export const Bitmart: Story = {
@@ -109,10 +109,10 @@ export const Discord: Story = {
     setup() {
       return { args }
     },
-    template: `<WIcon v-bind="args" />`
+    template: `<WIcon v-bind="args"  />`
   }),
   args: {
-    name: 'discord-nav'
+    name: 'discord'
   }
 }
 export const Docker: Story = {
@@ -124,7 +124,8 @@ export const Docker: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'docker-nav'
+    name: 'docker',
+    color: 'black'
   }
 }
 export const EmptyState: Story = {
@@ -196,7 +197,8 @@ export const Linux: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'linux'
+    name: 'linux',
+    color: 'black'
   }
 }
 export const Mexc: Story = {
@@ -244,7 +246,8 @@ export const Raspberry: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'raspberry'
+    name: 'raspberry',
+    color: 'black'
   }
 }
 export const RightArrow: Story = {
@@ -305,21 +308,11 @@ export const Windows: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'windows'
+    name: 'windows',
+    color: 'black'
   }
 }
-export const Witnet: Story = {
-  render: (args: any) => ({
-    components: { WIcon },
-    setup() {
-      return { args }
-    },
-    template: `<WIcon v-bind="args" />`
-  }),
-  args: {
-    name: 'witnet-logo-dark'
-  }
-}
+
 export const X: Story = {
   render: (args: any) => ({
     components: { WIcon },

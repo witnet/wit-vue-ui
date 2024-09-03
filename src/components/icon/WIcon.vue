@@ -1,5 +1,5 @@
 <template>
-  <component :is="iconComponent" v-bind="$attrs" />
+  <component :class="{ color: color }" :is="iconComponent" v-bind="$attrs" />
 </template>
 
 <script setup lang="ts">
@@ -22,7 +22,6 @@ import RaspberryIcon from '@/assets/svg/raspberry.svg?component'
 import SheikahIcon from '@/assets/svg/sheikah.svg?component'
 import SimpleswapIcon from '@/assets/svg/simpleswap.svg?component'
 import WindowsIcon from '@/assets/svg/windows.svg?component'
-import WitnetLogoDarkIcon from '@/assets/svg/witnet-logo-dark.svg?component'
 import DiscordIcon from '@/assets/svg/discord.svg?component'
 import GateIcon from '@/assets/svg/gate.svg?component'
 import GithubIcon from '@/assets/svg/github.svg?component'
@@ -41,9 +40,12 @@ const props = defineProps({
     }
   },
   color: {
-    type: String,
-    default: '#232323'
+    type: String
   }
+})
+
+const internalColor = computed(() => {
+  return props.color || '#232323'
 })
 
 const icons: Record<IconName, string> = {
@@ -69,7 +71,6 @@ const icons: Record<IconName, string> = {
   [IconName.Simpleswap]: SimpleswapIcon,
   [IconName.Telegram]: TelegramIcon,
   [IconName.Windows]: WindowsIcon,
-  [IconName.WitnetLogoDark]: WitnetLogoDarkIcon,
   [IconName.X]: XIcon
 }
 
@@ -79,7 +80,9 @@ const iconComponent = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-:deep(path) {
-  fill: v-bind(color);
+.color {
+  :deep(path) {
+    fill: v-bind(internalColor);
+  }
 }
 </style>

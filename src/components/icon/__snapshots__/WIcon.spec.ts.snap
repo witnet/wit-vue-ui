@@ -2,6 +2,7 @@
 
 exports[`WIcon > renders the specified svg 1`] = `
 <svg
+  class=""
   data-v-c15836e8=""
   fill="none"
   height="32"
