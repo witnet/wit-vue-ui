@@ -1,5 +1,6 @@
 declare module '*.svg?component' {
-  const value: string;
-  export default value;
+  import { DefineComponent, SVGAttributes } from 'vue'
+  const src: DefineComponent<SVGAttributes>
+  export default src
 }
 declare module '*.vue';
