@@ -16,7 +16,7 @@ const props = defineProps({
   },
   hover: {
     type: Boolean,
-    default: false
+    default: true
   },
   label: {
     type: String,

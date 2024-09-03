@@ -18,7 +18,7 @@ export const Default: Story = {
     setup() {
       return { args }
     },
-    template: `<Link v-bind="args">Link</Link>`
+    template: `<WLink v-bind="args">Link</Link>`
   }),
   args: {
     label: 'Link',
@@ -32,26 +32,12 @@ export const Underline: Story = {
     setup() {
       return { args }
     },
-    template: `<Link v-bind="args">Link</Link>`
+    template: `<WLink v-bind="args">Link</Link>`
   }),
   args: {
     label: 'Link',
     underline: true,
-    href: '#'
-  }
-}
-
-export const Hover: Story = {
-  render: (args) => ({
-    components: { WLink },
-    setup() {
-      return { args }
-    },
-    template: `<Link v-bind="args">Link</Link>`
-  }),
-  args: {
-    label: 'Link',
-    hover: true,
-    href: '#'
+    href: '#',
+    hover: false
   }
 }
