@@ -7,7 +7,6 @@ import Icon from '@/assets/svg/navigation-cursor.svg?component'
 describe('WSelect', () => {
   it('renders properly', () => {
     const wrapper = shallowMount(WSelect, {
-      emits: ['update:modelValue'],
       props: {
         dropdownPosition: DropdownPosition.Bottom,
         modelValue: {
@@ -15,7 +14,6 @@ describe('WSelect', () => {
           label: 'English',
           icon: null
         },
-        'onUpdate:modelValue': (e) => wrapper.setProps({ modelValue: e }),
         options: [{
             key: 'en',
             label: 'English',
@@ -34,7 +32,6 @@ describe('WSelect', () => {
 
   it('renders properly an icon when provided', () => {
     const wrapper = shallowMount(WSelect, {
-      emits: ['update:modelValue'],
       props: {
         dropdownPosition: DropdownPosition.Bottom,
         modelValue: {
@@ -42,7 +39,6 @@ describe('WSelect', () => {
           label: 'English',
           icon: Icon
         },
-        'onUpdate:modelValue': (e) => wrapper.setProps({ modelValue: e }),
         options: [{
             key: 'en',
             label: 'English',
