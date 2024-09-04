@@ -8,30 +8,26 @@
       @mouseenter="toggleHover"
       @mouseleave="toggleHover"
     >
-      <div
-        class="card border rounded-lg px-xl py-xl mr-sm mb-sm max-w-md h-full"
-      >
-        <div class="flex justify-between items-center">
-          <h3 class="text-xl text-black-950 font-semibold leading-4">
-            {{ title }}
-          </h3>
-          <AnimatedArrow :hover="hover" color="#C6C6C6" />
-        </div>
-        <hr class="hr my-md" />
-        <slot name="description" class="text-sm text-black-950"></slot>
-      </div>
+      <BaseCard :title="title" :hover="hover" :link="true">
+        <template #description>
+          <slot name="description" class="text-sm text-black-950"></slot>
+        </template>
+      </BaseCard>
     </a>
   </div>
-  <div
-    v-else class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
-  >
   <div v-if="isBaseCard">
-    <slot name="content"></slot>
+    <BaseCard :title="title" :hover="hover">
+      <template #description>
+        <slot name="description" class="text-sm text-black-950"></slot>
+      </template>
+    </BaseCard>
   </div>
-  <div v-if="isIconCard">
-    <RoundedIcon class="rounded-icon" icon-size="60px">
+  <div
+    v-if="isIconCard" class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
+  >
+    <WIconRounded class="rounded-icon" :size="90" :disableHoverEffect="true">
       <slot name="icon">Icon</slot>
-    </RoundedIcon>
+    </WIconRounded>
     <div class="ml-xl px-sm">
       <h3 class="text-2xl text-black-950 font-semibold leading-4 pl-14">
         {{ title }}
@@ -47,16 +43,16 @@
       <WButton class="action" type="arrow">{{ urlLabel }}</WButton>
     </a>
   </div>
-  </div>
 </template>
 
 <script setup lang="ts">
 import { cardTypes, CardType } from './WCard.ts'
 import { PropType, computed, ref } from 'vue'
-import AnimatedArrow from '../AnimatedArrow.vue'
+
 import SlashesIcon from '@/assets/svg/slashes.svg?component'
 import WButton from '../Button/WButton.vue'
-import RoundedIcon from '../RoundedIcon.vue'
+import WIconRounded from '../IconRounded/WIconRounded.vue'
+import BaseCard from './BaseCard.vue'
 const hover = ref(false)
 const props = defineProps({
   type: {
@@ -92,11 +88,6 @@ function toggleHover() {
 </script>
 
 <style scoped lang="scss">
-:slotted(svg) {
-  width: 60px;
-  height: 60px;
-}
-
 .out-of-boundaries {
   // add margin equal to out of boundaries
   margin: 15px 30px 25px 15px;

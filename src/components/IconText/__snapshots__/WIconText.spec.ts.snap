@@ -40,7 +40,7 @@ exports[`WIconText > renders properly ROUNDED RIGHT 1`] = `
   target="_blank"
 >
   <div
-    class="border border-black-950 w-min rounded-full bg-wit-blue-500 hover:bg-wit-blue-300 transition-colors icon-container flex justify-center items-center rounded-icon mr-md"
+    class="icon-container border border-black-950 w-min rounded-full bg-wit-blue-500 transition-colors flex justify-center items-center rounded-icon mr-md"
     data-v-1216bb64=""
   >
     

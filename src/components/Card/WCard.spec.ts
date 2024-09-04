@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import WCard from './WCard.vue'
 import { CardType } from './WCard'
-import AnimatedArrow from '../AnimatedArrow.vue'
+import AnimatedArrow from '../AnimatedArrow/AnimatedArrow.vue'
 
 describe('WCard', () => {
   it('base', () => {

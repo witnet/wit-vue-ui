@@ -2,41 +2,64 @@
 
 exports[`WCard > base 1`] = `
 <div
-  class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
-  data-v-47e965dc=""
+  data-v-app=""
 >
-  <div
-    data-v-47e965dc=""
-  >
-    
-    
-  </div>
-  <!--v-if-->
-</div>
-`;
-
-exports[`WCard > icon 1`] = `
-<div
-  class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
-  data-v-47e965dc=""
->
+  
   <!--v-if-->
   <div
     data-v-47e965dc=""
   >
     <div
-      class="border border-black-950 w-min rounded-full p-md bg-wit-blue-500 rounded-icon"
+      class="card border rounded-lg px-xl py-xl mr-sm mb-sm max-w-md h-full"
+      data-v-42578349=""
       data-v-47e965dc=""
     >
       <div
-        class="icon-container flex justify-center items-center"
+        class="flex justify-between items-center"
+        data-v-42578349=""
       >
-        
-        
-        WIcon
-        
-        
+        <h3
+          class="text-xl text-black-950 font-semibold leading-4"
+          data-v-42578349=""
+        >
+          Title
+        </h3>
+        <!--v-if-->
       </div>
+      <hr
+        class="hr my-md"
+        data-v-42578349=""
+      />
+      
+      
+    </div>
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`WCard > icon 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <!--v-if-->
+  <div
+    class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
+    data-v-47e965dc=""
+  >
+    <div
+      class="icon-container border border-black-950 w-min rounded-full bg-wit-blue-500 transition-colors flex justify-center items-center rounded-icon"
+      data-v-1216bb64=""
+      data-v-47e965dc=""
+    >
+      
+      
+      WIcon
+      
+      
     </div>
     <div
       class="ml-xl px-sm"
@@ -108,5 +131,6 @@ exports[`WCard > icon 1`] = `
       </button>
     </a>
   </div>
+  
 </div>
 `;

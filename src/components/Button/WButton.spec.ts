@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
 import WBtn from './WButton.vue'
-import AnimatedArrow from '../AnimatedArrow.vue'
+import AnimatedArrow from '../AnimatedArrow/AnimatedArrow.vue'
 
 describe('WBtn', () => {
   it('renders properly', () => {

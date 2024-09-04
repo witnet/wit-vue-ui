@@ -36,6 +36,7 @@ export const Default: Story = {
     }
   }),
   args: {
-    size: 70
+    size: 70,
+    disableHoverEffect: false,
   }
 }
