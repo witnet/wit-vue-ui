@@ -24,7 +24,7 @@ export const Base: Story = {
     template: `<WInput v-bind="args">WInput</WInput>`
   }),
   args: {
-    type: InputType.base,
+    type: InputType.Base,
     contentType: 'number'
   }
 }
@@ -41,7 +41,7 @@ export const Action: Story = {
     template: `<WInput v-bind="args">WInput</WInput>`
   }),
   args: {
-    type: InputType.action,
+    type: InputType.Action,
     placeholder: 'email@mail.com',
     contentType: 'email'
   }

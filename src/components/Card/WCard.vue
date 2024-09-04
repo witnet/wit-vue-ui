@@ -61,7 +61,7 @@ const hover = ref(false)
 const props = defineProps({
   type: {
     type: String as PropType<CardType>,
-    default: CardType.base,
+    default: CardType.Base,
     validator(value: CardType) {
       return cardTypes.includes(value)
     }
@@ -83,9 +83,9 @@ const props = defineProps({
     required: false,
   },
 })
-const isIconCard = computed(() => props.type === CardType.icon)
-const isLinkCard = computed(() => props.type === CardType.link)
-const isBaseCard = computed(() => props.type === CardType.base)
+const isIconCard = computed(() => props.type === CardType.Icon)
+const isLinkCard = computed(() => props.type === CardType.Link)
+const isBaseCard = computed(() => props.type === CardType.Base)
 function toggleHover() {
   hover.value = !hover.value
 }

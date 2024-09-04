@@ -8,7 +8,7 @@ describe('WInput', () => {
   it('base', () => {
     const wrapper = mount(WInput, {
       props: {
-        type: InputType.base,
+        type: InputType.Base,
         contentType: 'number',
         placeholder: 'Amount'
       },
@@ -20,7 +20,7 @@ describe('WInput', () => {
   it('action', () => {
     const wrapper = mount(WInput, {
       props: {
-        type: InputType.action,
+        type: InputType.Action,
         contentType: 'email',
         placeholder: 'email@mail.com'
       },

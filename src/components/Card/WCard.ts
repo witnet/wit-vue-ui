@@ -1,7 +1,7 @@
 export enum CardType {
-  base = 'base',
-  icon = 'icon',
-  link = 'link',
+  Base = 'base',
+  Icon = 'icon',
+  Link = 'link',
 }
 
 export const cardTypes = Object.values(CardType)

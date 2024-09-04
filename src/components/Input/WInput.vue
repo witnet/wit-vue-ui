@@ -26,7 +26,7 @@ import { inputTypes, InputType } from './WInput'
 const props = defineProps({
   type: {
     type: String as PropType<InputType>,
-    default: InputType.base,
+    default: InputType.Base,
     validator(value: InputType) {
       return inputTypes.includes(value)
     }
@@ -49,9 +49,8 @@ const props = defineProps({
   }
 })
 const emit = defineEmits(['action'])
-const isActionInput = computed(() => props.type === InputType.action)
+const isActionInput = computed(() => props.type === InputType.Action)
 function action() {
-  console.log('emit action')
   emit('action')
 }
 </script>

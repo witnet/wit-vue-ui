@@ -9,7 +9,7 @@ describe('WCard', () => {
   it('base', () => {
     const wrapper = mount(WCard, {
       props: {
-        type: CardType.base
+        type: CardType.Base
       },
       slots: {
         default: 'Button'
@@ -21,7 +21,7 @@ describe('WCard', () => {
   it('icon', () => {
     const wrapper = mount(WCard, {
       props: {
-        type: CardType.icon,
+        type: CardType.Icon,
         title: 'Custom title',
         description: 'Custom description',
         url: '#url',
@@ -38,7 +38,7 @@ describe('WCard', () => {
   it('link', () => {
     const wrapper = mount(WCard, {
       props: {
-        type: CardType.link,
+        type: CardType.Link,
         title: 'Custom link title',
       },
       slots: {

@@ -10,7 +10,7 @@ const meta: any = {
     type: { control: 'select', options: ['base', 'icon', 'link'] }
   },
   args: {
-    type: CardType.base
+    type: CardType.Base
   }
 } satisfies Meta<typeof WCard>
 
