@@ -48,7 +48,7 @@ const props = defineProps({
   },
   dropdownPosition: {
     type: String as PropType<DropdownPosition>,
-    default: DropdownPosition.bottom,
+    default: DropdownPosition.Bottom,
     validator(value: DropdownPosition) {
       return dropdownPostions.includes(value)
     }
@@ -63,7 +63,7 @@ const props = defineProps({
   }
 })
 
-const position = computed(() => props.dropdownPosition === DropdownPosition.top ? '-210%' : '110%')
+const position = computed(() => props.dropdownPosition === DropdownPosition.Top ? '-210%' : '110%')
 </script>
 
 <style lang="scss">

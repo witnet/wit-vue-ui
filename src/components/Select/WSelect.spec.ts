@@ -9,7 +9,7 @@ describe('WSelect', () => {
     const wrapper = shallowMount(WSelect, {
       emits: ['update:modelValue'],
       props: {
-        dropdownPosition: DropdownPosition.bottom,
+        dropdownPosition: DropdownPosition.Bottom,
         modelValue: {
           key: 'en',
           label: 'English',
@@ -36,7 +36,7 @@ describe('WSelect', () => {
     const wrapper = shallowMount(WSelect, {
       emits: ['update:modelValue'],
       props: {
-        dropdownPosition: DropdownPosition.bottom,
+        dropdownPosition: DropdownPosition.Bottom,
         modelValue: {
           key: 'en',
           label: 'English',
