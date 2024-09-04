@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, PropType } from 'vue'
+import { computed, DefineComponent, PropType, SVGAttributes } from 'vue'
 
 import AdoIcon from '@/assets/svg/ado.svg?component'
 import AppleIcon from '@/assets/svg/apple.svg?component'
@@ -48,7 +48,7 @@ const internalColor = computed(() => {
   return props.color || '#232323'
 })
 
-const icons: Record<IconName, string> = {
+const icons: Record<IconName, DefineComponent<SVGAttributes>> = {
   [IconName.Ado]: AdoIcon,
   [IconName.Apple]: AppleIcon,
   [IconName.Bitmart]: BitmartIcon,
