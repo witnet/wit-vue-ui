@@ -10,15 +10,16 @@
     >
       <BaseCard :title="title" :hover="hover" :link="true">
         <template #description>
-          <slot name="description" class="text-sm text-black-950"></slot>
+          <slot name="description"></slot>
         </template>
       </BaseCard>
     </a>
   </div>
   <div v-if="isBaseCard">
-    <BaseCard :title="title" :hover="hover">
+    <BaseCard :hover="hover">
+      <template #header><slot name="header"></slot></template>
       <template #description>
-        <slot name="description" class="text-sm text-black-950"></slot>
+        <slot name="description"></slot>
       </template>
     </BaseCard>
   </div>

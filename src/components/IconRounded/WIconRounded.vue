@@ -1,6 +1,7 @@
 <template>
   <div
-    class="icon-container border border-black-950 w-min rounded-full bg-wit-blue-500 transition-colors flex justify-center items-center"
+    :class="{['hover-effect']: !disableHoverEffect}"
+    class="icon-container border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center"
   >
     <slot></slot>
   </div>
@@ -19,7 +20,7 @@ const props = defineProps({
     default: false
   }
 })
-const hoverBgColor = computed(() => props.disableHoverEffect ? 'wit-blue-500' : 'wit-blue-300')
+
 const iconSize = computed(() => `${props.size - props.size * 0.4}px`)
 const containerSize = computed(() => `${props.size}px`)
 </script>
@@ -33,6 +34,9 @@ const containerSize = computed(() => `${props.size}px`)
 }
 
 .icon-container {
-  @apply min-h-[v-bind(containerSize)] min-w-[v-bind(containerSize)] hover:bg-[v-bind(hoverBgColor)];
+  @apply min-h-[v-bind(containerSize)] min-w-[v-bind(containerSize)];
+}
+.hover-effect {
+  @apply hover:bg-wit-blue-300
 }
 </style>
