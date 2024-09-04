@@ -43,8 +43,8 @@ export const Icon: Story = {
   }),
   args: {
     type: 'icon',
-    title: 'Custom title',
-    description: 'Custom description',
+    title: 'Lorem ipsum',
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
     url: '#url',
     urlLabel: 'Link to'
   }

@@ -25,7 +25,7 @@ export const Base: Story = {
   }),
   args: {
     type: InputType.Base,
-    contentType: 'number'
+    contentType: 'string'
   }
 }
 

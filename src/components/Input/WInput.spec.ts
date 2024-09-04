@@ -9,7 +9,7 @@ describe('WInput', () => {
     const wrapper = mount(WInput, {
       props: {
         type: InputType.Base,
-        contentType: 'number',
+        contentType: 'string',
         placeholder: 'Amount'
       },
     })

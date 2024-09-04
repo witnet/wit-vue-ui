@@ -25,7 +25,7 @@ import WindowsIcon from '@/assets/svg/windows.svg?component'
 import DiscordIcon from '@/assets/svg/discord.svg?component'
 import GateIcon from '@/assets/svg/gate.svg?component'
 import GithubIcon from '@/assets/svg/github.svg?component'
-import RightArrowIcon from '@/assets/svg/rightArrow.svg?component'
+import RightArrowIcon from '@/assets/svg/icon-right-arrow.svg?component'
 import TelegramIcon from '@/assets/svg/telegram.svg?component'
 import XIcon from '@/assets/svg/x.svg?component'
 

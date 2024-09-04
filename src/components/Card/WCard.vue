@@ -42,7 +42,7 @@
       {{ description }}
     </p>
 
-    <SlashesIcon class="slashes w-[68px] sm:hidden"></SlashesIcon>
+    <SlashesIcon class="slashes w-2xl sm:hidden"></SlashesIcon>
     <a :href="url" :aria-label="urlLabel" target="_blank">
       <WButton class="action" type="arrow">{{ urlLabel }}</WButton>
     </a>
