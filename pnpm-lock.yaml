@@ -21,7 +21,7 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(vue@3.4.38(typescript@5.4.5))
       vue:
-        specifier: ^3.4.38
+        specifier: 3.4.38
         version: 3.4.38(typescript@5.4.5)
     devDependencies:
       '@chromatic-com/storybook':
