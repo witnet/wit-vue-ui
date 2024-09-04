@@ -15,7 +15,7 @@
           <h3 class="text-xl text-black-950 font-semibold leading-4">
             {{ title }}
           </h3>
-          <AnimatedArrow :hover="hover" />
+          <AnimatedArrow :hover="hover" color="#C6C6C6" />
         </div>
         <hr class="hr my-md" />
         <slot name="description" class="text-sm text-black-950"></slot>

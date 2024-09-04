@@ -91,7 +91,8 @@ exports[`WCard > icon 1`] = `
           data-v-870c3481=""
         >
           <svg
-            class="arrow ml-md h-[14px]"
+            class="color arrow ml-md h-[14px] arrow ml-md h-[14px]"
+            data-v-c15836e8=""
             fill="none"
             height="25"
             viewBox="0 0 15 25"
