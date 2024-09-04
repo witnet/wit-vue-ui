@@ -11,7 +11,7 @@ describe('WInput', () => {
         type: InputType.Base,
         contentType: 'string',
         placeholder: 'Amount'
-      },
+      }
     })
 
     expect(wrapper.element).toMatchSnapshot()
@@ -23,7 +23,7 @@ describe('WInput', () => {
         type: InputType.Action,
         contentType: 'email',
         placeholder: 'email@mail.com'
-      },
+      }
     })
 
     expect(wrapper.element).toMatchSnapshot()

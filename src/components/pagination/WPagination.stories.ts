@@ -23,6 +23,6 @@ export const Default: Story = {
   args: {
     total: 100,
     pageSize: 5,
-    page: 1,
+    page: 1
   }
 }

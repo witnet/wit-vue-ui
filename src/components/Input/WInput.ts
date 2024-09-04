@@ -1,6 +1,6 @@
 export enum InputType {
   Base = 'base',
-  Action = 'action',
+  Action = 'action'
 }
 
 export const inputTypes = Object.values(InputType)

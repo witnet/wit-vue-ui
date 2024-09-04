@@ -2,7 +2,7 @@
 
 exports[`WIconRounded > renders properly 1`] = `
 <div
-  class="icon-container border border-black-950 w-min rounded-full bg-wit-blue-500 transition-colors flex justify-center items-center"
+  class="hover-effect icon-container border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center"
   data-v-1216bb64=""
 >
   

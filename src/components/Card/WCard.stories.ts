@@ -26,7 +26,7 @@ export const Base: Story = {
     template: `<WCard v-bind="args"><template #header><h3>Lorem ipsum</h3></template><template #description>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</template></WCard>`
   }),
   args: {
-    type: 'base',
+    type: 'base'
   }
 }
 
@@ -57,7 +57,8 @@ export const Icon: Story = {
   args: {
     type: 'icon',
     title: 'Lorem ipsum',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
     url: '#url',
     urlLabel: 'Link to'
   }
@@ -73,6 +74,6 @@ export const Link: Story = {
   }),
   args: {
     type: 'link',
-    title: 'Lorem ipsum',
+    title: 'Lorem ipsum'
   }
 }

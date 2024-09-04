@@ -23,7 +23,8 @@ describe('WCard', () => {
       props: {
         type: CardType.Icon,
         title: 'Lorem ipsum',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+        description:
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
         url: '#url',
         urlLabel: 'Link to'
       },
@@ -39,10 +40,11 @@ describe('WCard', () => {
     const wrapper = mount(WCard, {
       props: {
         type: CardType.Link,
-        title: 'Lorem ipsum',
+        title: 'Lorem ipsum'
       },
       slots: {
-        description: '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>'
+        description:
+          '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>'
       }
     })
 

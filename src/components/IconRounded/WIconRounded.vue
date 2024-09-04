@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{['hover-effect']: !disableHoverEffect}"
+    :class="{ ['hover-effect']: !disableHoverEffect }"
     class="icon-container border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center"
   >
     <slot></slot>
@@ -37,6 +37,6 @@ const containerSize = computed(() => `${props.size}px`)
   @apply min-h-[v-bind(containerSize)] min-w-[v-bind(containerSize)];
 }
 .hover-effect {
-  @apply hover:bg-wit-blue-300
+  @apply hover:bg-wit-blue-300;
 }
 </style>

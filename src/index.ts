@@ -32,8 +32,23 @@ import WSpinner from './components/Spinner/WSpinner.vue'
 import WSocialsBar from './components/SocialsBar/WSocialsBar.vue'
 export { SOCIAL_URLS } from './components/SocialsBar/WSocialsBar'
 
-
-export { WButton, WCard, WEmptyState, WFooter, WIcon, WIconText, WIconRounded, WInput, WLink, WLoadingPlaceholder, WNavbar, WPagination, WSection, WSocialsBar, WSpinner }
+export {
+  WButton,
+  WCard,
+  WEmptyState,
+  WFooter,
+  WIcon,
+  WIconText,
+  WIconRounded,
+  WInput,
+  WLink,
+  WLoadingPlaceholder,
+  WNavbar,
+  WPagination,
+  WSection,
+  WSocialsBar,
+  WSpinner
+}
 export type WButton = typeof WButton
 export type WCard = typeof WCard
 export type WEmptyState = typeof WEmptyState

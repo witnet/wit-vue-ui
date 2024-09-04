@@ -4,7 +4,10 @@
       :type="contentType"
       :placeholder="placeholder"
       :name="contentType"
-      :class="{ [`[&&]:border-black-950 border-2`]: outlined, [`[&&]:rounded-l-full [&&]:rounded-none`]: isActionInput }"
+      :class="{
+        [`[&&]:border-black-950 border-2`]: outlined,
+        [`[&&]:rounded-l-full [&&]:rounded-none`]: isActionInput
+      }"
       class="text-black-950 outline-none border-white-50 required email rounded-full border min-w-[300px] sm:min-w-full py-sm px-md block w-full shadow-sm text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
       value=""
     />
@@ -33,7 +36,7 @@ const props = defineProps({
   },
   outlined: {
     type: Boolean,
-    default: false,
+    default: false
   },
   contentType: {
     type: String,
@@ -41,11 +44,11 @@ const props = defineProps({
   },
   placeholder: {
     type: String,
-    default: null,
+    default: null
   },
   actionLabel: {
     type: String,
-    required: false,
+    required: false
   }
 })
 const emit = defineEmits(['action'])

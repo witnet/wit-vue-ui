@@ -24,7 +24,8 @@
     </BaseCard>
   </div>
   <div
-    v-if="isIconCard" class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
+    v-if="isIconCard"
+    class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
   >
     <WIconRounded class="rounded-icon" :size="90" :disableHoverEffect="true">
       <slot name="icon">Icon</slot>
@@ -65,20 +66,20 @@ const props = defineProps({
   },
   title: {
     type: String,
-    default: 'Title',
+    default: 'Title'
   },
   description: {
     type: String,
-    default: 'Description',
+    default: 'Description'
   },
   urlLabel: {
     type: String,
-    required: false,
+    required: false
   },
   url: {
     type: String,
-    required: false,
-  },
+    required: false
+  }
 })
 const isIconCard = computed(() => props.type === CardType.Icon)
 const isLinkCard = computed(() => props.type === CardType.Link)
@@ -135,4 +136,3 @@ function toggleHover() {
   @apply bg-wit-blue-500;
 }
 </style>
-
