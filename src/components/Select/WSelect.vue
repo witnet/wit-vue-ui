@@ -88,10 +88,6 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
 </script>
 
 <style lang="scss">
-.dropdown-enter {
-  transform: translateY(-8px);
-}
-
 .dropdown-enter-to {
   transform: translateY(0px);
 }
@@ -100,17 +96,13 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
   transform: translateY(-8px);
 }
 
-.dropdown-leave {
+.dropdown-leave-from {
   transform: translateY(0px);
 }
 
 .dropdown-leave-to {
   opacity: 0;
   transform: translateY(-8px);
-}
-
-.dropdown-leave-from {
-  transform: translateY(0);
 }
 
 .dropdown-leave-active {
