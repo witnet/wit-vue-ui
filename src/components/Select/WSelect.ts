@@ -1,6 +1,11 @@
 export type Option = { key: string; label: string; icon: string | null }
-export enum DropdownPosition {
+export enum DropdownYPosition {
   Top = 'top',
   Bottom = 'bottom'
 }
-export const dropdownPostions = Object.values(DropdownPosition)
+export enum DropdownXPosition {
+  Right = 'right',
+  Left = 'left'
+}
+export const dropdownYPositions = Object.values(DropdownYPosition)
+export const dropdownXPositions = Object.values(DropdownXPosition)

@@ -8,6 +8,7 @@
     :filterable="false"
     :searchable="false"
     class="language-selector"
+    :class="xPosition"
   >
     <template #selected-option-container="{ option }">
       <span class="vs__selected">
@@ -35,7 +36,12 @@
 <script setup lang="ts">
 import vSelect from 'vue-select'
 import 'vue-select/dist/vue-select.css'
-import { dropdownPostions, DropdownPosition } from './WSelect'
+import {
+  dropdownYPositions,
+  dropdownXPositions,
+  DropdownYPosition,
+  DropdownXPosition
+} from './WSelect'
 import { PropType, computed, DefineComponent, SVGAttributes } from 'vue'
 
 type Option = { key: string; label: string; icon: DefineComponent<SVGAttributes> | null }
@@ -46,11 +52,18 @@ const props = defineProps({
     type: Array as PropType<Array<Option>>,
     required: true
   },
-  dropdownPosition: {
-    type: String as PropType<DropdownPosition>,
-    default: DropdownPosition.Bottom,
-    validator(value: DropdownPosition) {
-      return dropdownPostions.includes(value)
+  dropdownYPosition: {
+    type: String as PropType<DropdownYPosition>,
+    default: DropdownYPosition.Bottom,
+    validator(value: DropdownYPosition) {
+      return dropdownYPositions.includes(value)
+    }
+  },
+  dropdownXPosition: {
+    type: String as PropType<DropdownXPosition>,
+    default: DropdownXPosition.Right,
+    validator(value: DropdownXPosition) {
+      return dropdownXPositions.includes(value)
     }
   },
   hexPrimaryColor: {
@@ -62,10 +75,16 @@ const props = defineProps({
     default: '#ffffff'
   }
 })
-
-const position = computed(() =>
-  props.dropdownPosition === DropdownPosition.Top ? '-210%' : '110%'
-)
+const yPositions: Record<DropdownYPosition, string> = {
+  [DropdownYPosition.Top]: '-210%',
+  [DropdownYPosition.Bottom]: '110%'
+}
+const xPositions: Record<DropdownXPosition, string> = {
+  [DropdownXPosition.Right]: 'right',
+  [DropdownXPosition.Left]: 'left'
+}
+const yPosition = computed(() => yPositions[props.dropdownYPosition])
+const xPosition = computed(() => xPositions[props.dropdownXPosition])
 </script>
 
 <style lang="scss">
@@ -108,8 +127,20 @@ const position = computed(() =>
     transform: rotate(180deg) scale(0.5) !important;
   }
 }
+
 .language-selector {
-  @apply bg-[v-bind(hexPrimaryColor)] w-min px-md py-xs rounded-full flex justify-center;
+  @apply bg-[v-bind(hexPrimaryColor)] h-max w-auto px-md py-xs rounded-full flex justify-center;
+  &.right {
+    .vs__dropdown-menu {
+      left: unset;
+      right: 0px;
+    }
+  }
+  &.left {
+    .vs__dropdown-menu {
+      left: 0px;
+    }
+  }
   .option {
     @apply grid grid-cols-[max-content_max-content] justify-start items-center h-max;
   }
@@ -134,8 +165,7 @@ const position = computed(() =>
   }
   .vs__dropdown-menu {
     z-index: -10;
-    top: v-bind(position);
-    left: 0px;
+    top: v-bind(yPosition);
     background: v-bind(hexSecondaryColor);
     border: 2px solid v-bind(hexPrimaryColor);
     border-radius: 16px;
@@ -193,17 +223,4 @@ const position = computed(() =>
   opacity: 1 !important;
   position: inherit !important;
 }
-
-// @media (max-width: 706px) {
-//   .language-selector {
-//     padding: 8px 8px;
-//     .vs__selected {
-//       width: 100px;
-//     }
-//     .vs__dropdown-menu {
-//       top: -80px;
-//       left: 24px;
-//     }
-//   }
-// }
 </style>

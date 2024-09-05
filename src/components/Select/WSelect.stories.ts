@@ -1,6 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import WSelect from './WSelect.vue'
-import { dropdownPostions } from './WSelect'
+import {
+  DropdownXPosition,
+  dropdownXPositions,
+  DropdownYPosition,
+  dropdownYPositions
+} from './WSelect'
 import { ref } from 'vue'
 import 'vue-select/dist/vue-select.css'
 import Icon from '@/assets/svg/navigation-cursor.svg?component'
@@ -10,9 +15,12 @@ const meta: any = {
   component: WSelect,
   tags: ['autodocs'],
   argTypes: {
-    dropdownPosition: { control: 'select', options: dropdownPostions }
+    dropdownYPosition: { control: 'select', options: dropdownYPositions },
+    dropdownXPosition: { control: 'select', options: dropdownXPositions }
   },
   args: {
+    dropdownXPosition: DropdownXPosition.Right,
+    dropdownYPosition: DropdownYPosition.Bottom,
     options: [
       {
         key: 'en',
@@ -47,8 +55,10 @@ export const Default: Story = {
 
       return { args, model, update }
     },
-    template: `<WSelect v-bind="args" v-model="model" @update:model-value="update" />`,
+    template: `<div class="h-[100px] w-auto flex"><WSelect v-bind="args" v-model="model" @update:model-value="update" /></div>`,
     args: {
+      dropdownXPosition: DropdownXPosition.Right,
+      dropdownYPosition: DropdownYPosition.Bottom,
       options: [
         {
           key: 'en',
