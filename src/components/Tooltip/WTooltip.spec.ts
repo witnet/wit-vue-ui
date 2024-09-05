@@ -6,7 +6,7 @@ describe('WTooltip', () => {
   it('renders properly', () => {
     const wrapper = mount(WTooltip, {
       props: {
-        bgColor: '#000',
+        bgColor: '#000'
       },
       slots: {
         main: `<p>Text</p>`,

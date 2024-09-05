@@ -35,7 +35,7 @@
 <script setup lang="ts">
 import vSelect from 'vue-select'
 import 'vue-select/dist/vue-select.css'
-import { dropdownPostions, DropdownPosition} from './WSelect'
+import { dropdownPostions, DropdownPosition } from './WSelect'
 import { PropType, computed, DefineComponent, SVGAttributes } from 'vue'
 
 type Option = { key: string; label: string; icon: DefineComponent<SVGAttributes> | null }
@@ -44,7 +44,7 @@ const model = defineModel()
 const props = defineProps({
   options: {
     type: Array as PropType<Array<Option>>,
-    required: true,
+    required: true
   },
   dropdownPosition: {
     type: String as PropType<DropdownPosition>,
@@ -63,11 +63,12 @@ const props = defineProps({
   }
 })
 
-const position = computed(() => props.dropdownPosition === DropdownPosition.Top ? '-210%' : '110%')
+const position = computed(() =>
+  props.dropdownPosition === DropdownPosition.Top ? '-210%' : '110%'
+)
 </script>
 
 <style lang="scss">
-
 .dropdown-enter {
   transform: translateY(-8px);
 }
@@ -81,7 +82,7 @@ const position = computed(() => props.dropdownPosition === DropdownPosition.Top 
 }
 
 .dropdown-leave {
-    transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .dropdown-leave-to {
@@ -90,17 +91,17 @@ const position = computed(() => props.dropdownPosition === DropdownPosition.Top 
 }
 
 .dropdown-leave-from {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .dropdown-leave-active {
-    transition: all .2s cubic-bezier(.42,0,.58,1);
-    transition-delay: .5s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition-delay: 0.5s;
 }
 
 .dropdown-enter-active {
-    transition: all .2s cubic-bezier(.42,0,.58,1);
-    transition-delay: .5s;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  transition-delay: 0.5s;
 }
 .vs--open {
   .vs__open-indicator {
@@ -145,13 +146,13 @@ const position = computed(() => props.dropdownPosition === DropdownPosition.Top 
 
   .vs__dropdown-option {
     font-family: 'NeueMachina-Regular', sans-serif;
-    color: v-bind(hexPrimaryColor)
+    color: v-bind(hexPrimaryColor);
   }
 
   .vs__dropdown-option--highlight {
     z-index: 10;
     color: v-bind(hexSecondaryColor);
-    background: v-bind(hexPrimaryColor)
+    background: v-bind(hexPrimaryColor);
   }
 
   .vs__clear,
@@ -206,4 +207,3 @@ const position = computed(() => props.dropdownPosition === DropdownPosition.Top 
 //   }
 // }
 </style>
-

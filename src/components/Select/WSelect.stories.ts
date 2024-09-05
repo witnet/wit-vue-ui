@@ -10,18 +10,22 @@ const meta: any = {
   component: WSelect,
   tags: ['autodocs'],
   argTypes: {
-    dropdownPosition: { control: 'select', options: dropdownPostions },
+    dropdownPosition: { control: 'select', options: dropdownPostions }
   },
   args: {
-    options: [{
-      key: 'en',
-      label: 'English',
-      icon: null,
-    },{
-      key: 'es',
-      label: 'Español',
-      icon: null,
-    }]}
+    options: [
+      {
+        key: 'en',
+        label: 'English',
+        icon: null
+      },
+      {
+        key: 'es',
+        label: 'Español',
+        icon: null
+      }
+    ]
+  }
 } satisfies Meta<typeof WSelect>
 
 export default meta
@@ -34,26 +38,29 @@ export const Default: Story = {
       const model = ref({
         key: 'en',
         label: 'English',
-        icon: null,
-      });
+        icon: null
+      })
 
       function update($event: any) {
         model.value = $event
       }
-  
-      return { args, model, update };
+
+      return { args, model, update }
     },
     template: `<WSelect v-bind="args" v-model="model" @update:model-value="update" />`,
     args: {
-      options: [{
-        key: 'en',
-        label: 'English',
-        icon: null,
-      },{
-        key: 'es',
-        label: 'Español',
-        icon: Icon,
-      }]
+      options: [
+        {
+          key: 'en',
+          label: 'English',
+          icon: null
+        },
+        {
+          key: 'es',
+          label: 'Español',
+          icon: Icon
+        }
+      ]
     }
   })
 }

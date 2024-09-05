@@ -14,17 +14,19 @@ describe('WSelect', () => {
           label: 'English',
           icon: null
         },
-        options: [{
+        options: [
+          {
             key: 'en',
             label: 'English',
             icon: null
-          },{
+          },
+          {
             key: 'es',
             label: 'Español',
-            icon: null,
+            icon: null
           }
         ]
-      },
+      }
     })
 
     expect(wrapper.element).toMatchSnapshot()
@@ -39,17 +41,19 @@ describe('WSelect', () => {
           label: 'English',
           icon: Icon
         },
-        options: [{
+        options: [
+          {
             key: 'en',
             label: 'English',
             icon: Icon
-          },{
+          },
+          {
             key: 'es',
             label: 'Español',
-            icon: Icon,
+            icon: Icon
           }
         ]
-      },
+      }
     })
 
     expect(wrapper.element).toMatchSnapshot()
