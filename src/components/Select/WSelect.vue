@@ -115,12 +115,10 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
 
 .dropdown-leave-active {
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  transition-delay: 0.5s;
 }
 
 .dropdown-enter-active {
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  transition-delay: 0.5s;
 }
 .vs--open {
   .vs__open-indicator {
