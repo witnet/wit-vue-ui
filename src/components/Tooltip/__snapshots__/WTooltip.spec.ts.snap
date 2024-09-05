@@ -2,7 +2,7 @@
 
 exports[`WTooltip > renders properly 1`] = `
 <div
-  class="group inline relative p-[4px] -p-[4px]"
+  class="group inline relative p-sm -m-sm"
   data-v-38c68585=""
 >
   
@@ -11,7 +11,7 @@ exports[`WTooltip > renders properly 1`] = `
   </p>
   
   <div
-    class="tooltip-container hidden min-w-max py-md px-md rounded-lg group-hover:inline hover:inline transition-opacity text-sm rounded-md absolute bottom-md -translate-x-[50%] mb-sm"
+    class="bottom-lg -translate-x-[50%] tooltip-container hidden min-w-max py-md px-md rounded-lg group-hover:inline group-hover:opacity-100 text-sm rounded-md absolute"
     data-v-38c68585=""
   >
     

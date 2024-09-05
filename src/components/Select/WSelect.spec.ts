@@ -1,14 +1,15 @@
 import { describe, it, expect } from 'vitest'
 import { shallowMount } from '@vue/test-utils'
 import WSelect from './WSelect.vue'
-import { DropdownPosition } from './WSelect'
+import { DropdownXPosition, DropdownYPosition } from './WSelect'
 import Icon from '@/assets/svg/navigation-cursor.svg?component'
 
 describe('WSelect', () => {
   it('renders properly', () => {
     const wrapper = shallowMount(WSelect, {
       props: {
-        dropdownPosition: DropdownPosition.Bottom,
+        dropdownXPosition: DropdownXPosition.Right,
+        dropdownYPosition: DropdownYPosition.Bottom,
         modelValue: {
           key: 'en',
           label: 'English',
@@ -35,7 +36,8 @@ describe('WSelect', () => {
   it('renders properly an icon when provided', () => {
     const wrapper = shallowMount(WSelect, {
       props: {
-        dropdownPosition: DropdownPosition.Bottom,
+        dropdownXPosition: DropdownXPosition.Right,
+        dropdownYPosition: DropdownYPosition.Bottom,
         modelValue: {
           key: 'en',
           label: 'English',
