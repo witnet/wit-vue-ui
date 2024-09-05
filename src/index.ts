@@ -20,13 +20,13 @@ import WSocialsBar from './components/SocialsBar/WSocialsBar.vue'
 
 export { buttonTypes } from './components/Button/WButton'
 export { CardType, cardTypes } from './components/Card/WCard'
-export { FooterSection, FooterLink } from './components/Footer/WFooter'
+export { type FooterSection, type FooterLink } from './components/Footer/WFooter'
 export { IconName, iconNames } from './components/icon/WIcon'
 export { IconTextPosition, iconTextPositions } from './components/IconText/WIconText'
 export { InputType, inputTypes } from './components/Input/WInput'
-export { NavLinks, NavLink } from './components/Navbar/WNavbar'
+export { type NavLinks, type NavLink } from './components/Navbar/WNavbar'
 export {
-  Option,
+  type Option,
   DropdownYPosition,
   DropdownXPosition,
   dropdownYPositions,

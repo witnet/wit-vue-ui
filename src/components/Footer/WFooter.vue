@@ -74,7 +74,7 @@
 <script setup lang="ts">
 import AdoIcon from '@/assets/svg/ado.svg?component'
 import WitOracleIcon from '@/assets/svg/witnet-logo-dark.svg?component'
-import { FooterSection } from './WFooter.ts'
+import { FooterSection } from './WFooter'
 import WSection from '@/components/Section/WSection.vue'
 import { PropType } from 'vue'
 
