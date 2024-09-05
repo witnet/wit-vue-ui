@@ -1,37 +1,39 @@
 import './assets/main.css'
 
 import WButton from './components/Button/WButton.vue'
-export { buttonTypes } from './components/Button/WButton'
-
 import WCard from './components/Card/WCard.vue'
 import WEmptyState from './components/EmptyState/WEmptyState.vue'
-
 import WFooter from './components/Footer/WFooter.vue'
-
 import WIcon from './components/icon/WIcon.vue'
-export { IconName, iconNames } from './components/icon/WIcon'
-
 import WIconRounded from './components/IconRounded/WIconRounded.vue'
-
 import WIconText from './components/IconText/WIconText.vue'
-export { iconTextPositions } from './components/IconText/WIconText'
-
 import WInput from './components/Input/WInput.vue'
 import WLink from './components/Link/WLink.vue'
-
 import WLoadingPlaceholder from './components/LoadingPlaceholder/WLoadingPlaceholder.vue'
-
 import WNavbar from './components/Navbar/WNavbar.vue'
-
 import WPagination from './components/pagination/WPagination.vue'
-
 import WSection from './components/Section/WSection.vue'
 import WSelect from './components/Select/WSelect.vue'
 import WSpinner from './components/Spinner/WSpinner.vue'
 import WTooltip from './components/Tooltip/WTooltip.vue'
-
 import WSocialsBar from './components/SocialsBar/WSocialsBar.vue'
+
+export { buttonTypes } from './components/Button/WButton'
+export { CardType, cardTypes } from './components/Card/WCard'
+export { FooterSection, FooterLink } from './components/Footer/WFooter'
+export { IconName, iconNames } from './components/icon/WIcon'
+export { IconTextPosition, iconTextPositions } from './components/IconText/WIconText'
+export { InputType, inputTypes } from './components/Input/WInput'
+export { NavLinks, NavLink } from './components/Navbar/WNavbar'
+export {
+  Option,
+  DropdownYPosition,
+  DropdownXPosition,
+  dropdownYPositions,
+  dropdownXPositions
+} from './components/Select/WSelect'
 export { SOCIAL_URLS } from './components/SocialsBar/WSocialsBar'
+export { TooltipPosition, tooltipPostions } from './components/Tooltip/WTooltip'
 
 export {
   WButton,
