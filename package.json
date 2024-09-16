@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "homepage": "https://github.com/witnet/wit-vue-ui#readme",
-  "license" : "MIT",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/witnet/wit-vue-ui/issues"
   },

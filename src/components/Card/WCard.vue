@@ -15,19 +15,17 @@
       </BaseCard>
     </a>
   </div>
-  <div v-if="isBaseCard">
-    <BaseCard :hover="hover">
-      <template #header><slot name="header"></slot></template>
-      <template #description>
-        <slot name="description"></slot>
-      </template>
-    </BaseCard>
-  </div>
+  <BaseCard v-else-if="isBaseCard" :hover="hover">
+    <template #header><slot name="header"></slot></template>
+    <template #description>
+      <slot name="description"></slot>
+    </template>
+  </BaseCard>
   <div
-    v-if="isIconCard"
+    v-else
     class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
   >
-    <WIconRounded class="rounded-icon" :size="90" :disableHoverEffect="true">
+    <WIconRounded class="rounded-icon" :big-size="true" :disableHoverEffect="true">
       <slot name="icon">Icon</slot>
     </WIconRounded>
     <div class="ml-xl px-sm">
@@ -81,7 +79,6 @@ const props = defineProps({
     required: false
   }
 })
-const isIconCard = computed(() => props.type === CardType.Icon)
 const isLinkCard = computed(() => props.type === CardType.Link)
 const isBaseCard = computed(() => props.type === CardType.Base)
 function toggleHover() {

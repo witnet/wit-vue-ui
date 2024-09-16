@@ -40,7 +40,7 @@ exports[`WIconText > renders properly ROUNDED RIGHT 1`] = `
   target="_blank"
 >
   <div
-    class="hover-effect icon-container border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center rounded-icon mr-md"
+    class="min-h-[70px] min-w-[70px] border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center hover-effect rounded-icon mr-md"
     data-v-1216bb64=""
   >
     
@@ -64,7 +64,7 @@ exports[`WIconText > renders properly ROUNDED RIGHT 1`] = `
     
   </div>
   <p
-    class="text-link text-black-950 font-fold"
+    class="text-link font-bold text-black-950"
   >
     Text
   </p>

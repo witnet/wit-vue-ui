@@ -14,6 +14,10 @@ const meta = {
       control: 'boolean',
       default: false
     },
+    iconSize: {
+      control: 'number',
+      default: 70
+    },
     text: { control: 'text' },
     position: { control: 'select', options: ['right', 'bottom'] }
   },
@@ -44,7 +48,8 @@ export const Bottom: Story = {
   args: {
     link: '#',
     position: IconTextPosition.Bottom,
-    text: 'Text'
+    text: 'Text',
+    iconSize: 50
   }
 }
 
@@ -71,6 +76,7 @@ export const Right: Story = {
     position: IconTextPosition.Right,
     text: 'Text',
     rounded: true,
-    bold: true
+    bold: true,
+    iconSize: 50
   }
 }

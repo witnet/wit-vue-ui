@@ -41,7 +41,7 @@ const props = defineProps({
   },
   color: {
     type: String
-  }
+  },
 })
 
 const internalColor = computed(() => {
@@ -82,7 +82,9 @@ const iconComponent = computed(() => {
 <style lang="scss" scoped>
 .color {
   :deep(path) {
-    fill: v-bind(internalColor);
+    &:not(.fill-exluded) {
+      fill: v-bind(internalColor);
+    }
   }
 }
 </style>

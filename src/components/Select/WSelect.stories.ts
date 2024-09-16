@@ -55,7 +55,7 @@ export const Default: Story = {
 
       return { args, model, update }
     },
-    template: `<div class="h-[100px] w-auto flex"><WSelect v-bind="args" v-model="model" @update:model-value="update" /></div>`,
+    template: `<div class="h-[200px] flex justify-center items-center"><div class="h-max"><WSelect class="absolute top-xs" v-bind="args" v-model="model" @update:model-value="update" /></div></div>`,
     args: {
       dropdownXPosition: DropdownXPosition.Right,
       dropdownYPosition: DropdownYPosition.Bottom,

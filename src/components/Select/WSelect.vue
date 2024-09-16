@@ -154,7 +154,7 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
     }
   }
   .vs__dropdown-menu {
-    z-index: -10;
+    z-index: 9;
     top: v-bind(yPosition);
     background: v-bind(hexSecondaryColor);
     border: 2px solid v-bind(hexPrimaryColor);

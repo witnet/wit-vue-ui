@@ -6,13 +6,13 @@
     class="flex items-center icon-container w-fit"
     :class="{ 'flex-col': position === IconTextPosition.Bottom }"
   >
-    <WIconRounded v-if="rounded" class="rounded-icon" :class="textPositionClass">
+    <WIconRounded v-if="rounded" class="rounded-icon" :class="textPositionClass" :size="iconSize">
       <slot></slot>
     </WIconRounded>
 
     <slot v-else></slot>
 
-    <p class="text-link text-black-950" :class="{ 'font-fold': bold }">{{ text }}</p>
+    <p class="text-link" :class="{ 'font-bold': bold, 'text-black-950': !dark,  'text-white-50': dark }">{{ text }}</p>
   </a>
 </template>
 
@@ -25,6 +25,14 @@ const props = defineProps({
   text: {
     type: String,
     required: true
+  },
+  dark: {
+    type: Boolean,
+    default: false
+  },
+  iconSize: {
+    type: Number,
+    required: false,
   },
   link: {
     type: String,
@@ -54,3 +62,12 @@ const textPositionClass = computed(() => {
   }
 })
 </script>
+
+<style lang="scss">
+.rounded-icon {
+  @apply bg-wit-blue-500 transition-colors;
+}
+.icon-container:hover > .rounded-icon {
+  @apply bg-wit-blue-300;
+}
+</style>

@@ -43,7 +43,7 @@
         >
           <WitOracleIcon class="w-[140px] h-auto white" name="witnet_dark" />
           <div class="h-max self-center">
-            <p class="copyright max-w-100 footer-text">
+            <p class="flex gap-xs copyright max-w-100 footer-text">
               © <span>2018-{{ new Date().getFullYear() }}</span>
               <slot name="custom-contributors">
                 <span>
