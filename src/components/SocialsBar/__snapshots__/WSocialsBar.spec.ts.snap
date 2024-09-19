@@ -3,16 +3,19 @@
 exports[`SocialsBar > renders properly 1`] = `
 <div
   class="opacity-60 hover:opacity-100 grid grid-rows-1 grid-flow-row content-center gap-y-md w-fit justify-items-center"
+  data-v-5ed1f484=""
 >
   <a
     aria-label="https://twitter.com/witnet_io"
     class="link"
+    data-v-5ed1f484=""
     href="https://twitter.com/witnet_io"
     target="_blank"
   >
     
     <svg
-      class="icon h-auto w-md"
+      class="icon"
+      data-v-5ed1f484=""
       data-v-c15836e8=""
       fill="none"
       height="396"
@@ -31,12 +34,14 @@ exports[`SocialsBar > renders properly 1`] = `
   <a
     aria-label="https://t.me/witnetio"
     class="link"
+    data-v-5ed1f484=""
     href="https://t.me/witnetio"
     target="_blank"
   >
     
     <svg
-      class="icon h-auto w-md"
+      class="icon"
+      data-v-5ed1f484=""
       data-v-c15836e8=""
       fill="none"
       height="20"
@@ -57,12 +62,14 @@ exports[`SocialsBar > renders properly 1`] = `
   <a
     aria-label="https://discord.gg/witnet"
     class="link"
+    data-v-5ed1f484=""
     href="https://discord.gg/witnet"
     target="_blank"
   >
     
     <svg
-      class="icon h-auto w-md"
+      class="icon"
+      data-v-5ed1f484=""
       data-v-c15836e8=""
       fill="none"
       height="24"
@@ -83,12 +90,14 @@ exports[`SocialsBar > renders properly 1`] = `
   <a
     aria-label="https://github.com/witnet"
     class="link"
+    data-v-5ed1f484=""
     href="https://github.com/witnet"
     target="_blank"
   >
     
     <svg
-      class="icon h-auto w-md"
+      class="icon"
+      data-v-5ed1f484=""
       data-v-c15836e8=""
       fill="none"
       height="32"
@@ -109,14 +118,17 @@ exports[`SocialsBar > renders properly 1`] = `
   <!-- TODO(#413): set width to 40px to avoid wrong alignment -->
   <div
     class="flex mt-3xl w-xl"
+    data-v-5ed1f484=""
   >
     <p
       class="text-sm font-light text-white-400 [writing-mode:vertical-lr] -rotate-180 subtitle"
+      data-v-5ed1f484=""
     >
        Enjoy Smart, Neutral, 
     </p>
     <p
       class="text-sm font-light text-white-400 [writing-mode:vertical-lr] -rotate-180 subtitle"
+      data-v-5ed1f484=""
     >
        and Secure Data 
     </p>

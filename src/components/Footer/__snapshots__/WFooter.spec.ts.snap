@@ -272,7 +272,7 @@ exports[`WFooter > renders properly 1`] = `
           class="h-max self-center"
         >
           <p
-            class="copyright max-w-100 footer-text"
+            class="flex gap-xs copyright max-w-100 footer-text"
           >
              © 
             <span>

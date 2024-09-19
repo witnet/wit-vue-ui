@@ -2,7 +2,7 @@
 
 exports[`WCard > base 1`] = `
 <div
-  class="card border-2 bg-white-50 border-black-950 rounded-lg px-xl py-xl mr-sm mb-sm w-full h-full"
+  class="card border-2 bg-white-50 border-black-950 rounded-lg px-lg py-lg mr-sm mb-sm w-full h-full"
   data-v-42578349=""
   data-v-47e965dc=""
 >
@@ -33,7 +33,7 @@ exports[`WCard > icon 1`] = `
   data-v-47e965dc=""
 >
   <div
-    class="min-h-[70px] min-w-[70px] border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center big-size rounded-icon"
+    class="min-h-[74px] min-w-[74px] border border-black-950 w-min rounded-full bg-wit-blue-500 flex justify-center items-center big-size rounded-icon"
     data-v-1216bb64=""
     data-v-47e965dc=""
   >
