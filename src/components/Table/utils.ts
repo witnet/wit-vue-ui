@@ -38,6 +38,34 @@ export function getMockupLabels2() {
   ]
 }
 
+export function getMockupLabels3() {
+  return [
+    {
+      sortType: Sort.alphabetically,
+      label: 'Title',
+      break: true,
+      index: 0
+    },
+    {
+      sortType: Sort.alphabetically,
+      label: 'Description',
+      break: true,
+      index: 1
+    },
+    {
+      sortType: Sort.alphabeticallyReverse,
+      label: 'Date',
+      break: false,
+      index: 2
+    },
+    {
+      label: 'Link',
+      break: false,
+      index: 3
+    }
+  ]
+}
+
 export function getMockupLabels() {
   return [
     {
@@ -101,7 +129,8 @@ const col2_1: Column = {
   label: 'Title'
 }
 const col2_2 = {
-  value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a.',
+  value:
+    'Description descruotuin descruotuin descruotuin descruotuin descruotuin descruotuin descruotuin descruotuin descruotuin',
   label: 'Description'
 }
 const col2_3 = {
@@ -142,4 +171,17 @@ export function getMockupData2() {
   const row3: Row = addRow(3, row1)
   const row4: Row = addRow(4, row1)
   return [row1, row2, row3, row4]
+}
+const col3_2 = {
+  value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a.',
+  url: 'https://google.com',
+  label: 'Description',
+  truncate: true
+}
+const truncatedRow: Row = [col2_1, col3_2, col2_5, col2_6]
+export function getMockupData3() {
+  const row2: Row = addRow(2, truncatedRow)
+  const row3: Row = addRow(3, truncatedRow)
+  const row4: Row = addRow(4, truncatedRow)
+  return [row2, row3, row4]
 }

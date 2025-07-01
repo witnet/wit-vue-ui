@@ -67,7 +67,13 @@
           }"
           class="desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
         >
-          <WColumn :url="col.url" :value="col.value" :chips="col.chips" class="w-max"></WColumn>
+          <WColumn
+            :url="col.url"
+            :value="col.value"
+            :chips="col.chips"
+            :truncate="col.truncate ?? false"
+            class="w-max"
+          ></WColumn>
         </td>
       </tr>
     </tbody>

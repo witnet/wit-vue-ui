@@ -9,6 +9,7 @@ export type Column = {
   value?: string | number
   chips?: Chip[]
   label: string
+  truncate?: boolean
   url?: string
 }
 
