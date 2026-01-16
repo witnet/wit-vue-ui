@@ -147,7 +147,10 @@ exports[`WTable > renders properly 1`] = `
               href="https://"
               target="_blank"
             >
-              wit1hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
+              wit1hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k 
+              <span>
+                &gt;
+              </span>
             </a>
           </td>
         </div>
@@ -196,7 +199,10 @@ exports[`WTable > renders properly 1`] = `
             href="https://"
             target="_blank"
           >
-            wit1hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
+            wit1hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k 
+            <span>
+              &gt;
+            </span>
           </a>
         </td>
         <td
@@ -259,7 +265,10 @@ exports[`WTable > renders properly 1`] = `
               href="https://"
               target="_blank"
             >
-              wit2hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
+              wit2hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k 
+              <span>
+                &gt;
+              </span>
             </a>
           </td>
         </div>
@@ -308,7 +317,10 @@ exports[`WTable > renders properly 1`] = `
             href="https://"
             target="_blank"
           >
-            wit2hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
+            wit2hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k 
+            <span>
+              &gt;
+            </span>
           </a>
         </td>
         <td
@@ -371,7 +383,10 @@ exports[`WTable > renders properly 1`] = `
               href="https://"
               target="_blank"
             >
-              wit3hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
+              wit3hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k 
+              <span>
+                &gt;
+              </span>
             </a>
           </td>
         </div>
@@ -420,7 +435,10 @@ exports[`WTable > renders properly 1`] = `
             href="https://"
             target="_blank"
           >
-            wit3hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
+            wit3hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k 
+            <span>
+              &gt;
+            </span>
           </a>
         </td>
         <td

@@ -4,8 +4,9 @@
     :href="url ?? ''"
     target="_blank"
     class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
+    :class="{ 'truncate block [&&]:max-w-[400px]': truncate }"
   >
-    {{ value ?? 'unknown' }} >
+    {{ value ?? 'unknown' }} <span v-if="!truncate">></span>
   </a>
   <p v-else-if="chips" class="grid grid-cols-[max-content_max-content] w-max">
     <span
@@ -17,7 +18,7 @@
       {{ chip.label }}
     </span>
   </p>
-  <span v-else>
+  <span v-else :class="{ 'truncate block [&&]:max-w-[400px]': truncate }">
     {{ value }}
   </span>
 </template>
@@ -29,6 +30,10 @@ import { Chip } from './WTable'
 defineProps({
   url: {
     type: String,
+    default: null
+  },
+  truncate: {
+    type: Boolean,
     default: null
   },
   chips: {
